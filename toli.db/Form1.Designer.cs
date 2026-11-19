@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
+            colNumber = new DataGridViewTextBoxColumn();
+            ColEnglish = new DataGridViewTextBoxColumn();
+            ColMongolian = new DataGridViewTextBoxColumn();
+            ColRussian = new DataGridViewTextBoxColumn();
             label1 = new Label();
             textBox1 = new TextBox();
             label2 = new Label();
@@ -45,10 +49,9 @@
             button4 = new Button();
             button5 = new Button();
             textBox5 = new TextBox();
-            colNumber = new DataGridViewTextBoxColumn();
-            ColEnglish = new DataGridViewTextBoxColumn();
-            ColMongolian = new DataGridViewTextBoxColumn();
-            ColRussian = new DataGridViewTextBoxColumn();
+            lblDbInfo = new Label();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -62,6 +65,34 @@
             dataGridView1.Size = new Size(637, 308);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // colNumber
+            // 
+            colNumber.HeaderText = "№";
+            colNumber.MinimumWidth = 6;
+            colNumber.Name = "colNumber";
+            colNumber.Width = 125;
+            // 
+            // ColEnglish
+            // 
+            ColEnglish.HeaderText = " Англи";
+            ColEnglish.MinimumWidth = 6;
+            ColEnglish.Name = "ColEnglish";
+            ColEnglish.Width = 125;
+            // 
+            // ColMongolian
+            // 
+            ColMongolian.HeaderText = "Монгол";
+            ColMongolian.MinimumWidth = 6;
+            ColMongolian.Name = "ColMongolian";
+            ColMongolian.Width = 125;
+            // 
+            // ColRussian
+            // 
+            ColRussian.HeaderText = "Орос";
+            ColRussian.MinimumWidth = 6;
+            ColRussian.Name = "ColRussian";
+            ColRussian.Width = 125;
             // 
             // label1
             // 
@@ -201,39 +232,42 @@
             textBox5.TabIndex = 16;
             textBox5.Text = "Нийт: 10 үг • Санасан: 0";
             // 
-            // colNumber
+            // lblDbInfo
             // 
-            colNumber.HeaderText = "№";
-            colNumber.MinimumWidth = 6;
-            colNumber.Name = "colNumber";
-            colNumber.Width = 125;
+            lblDbInfo.AutoSize = true;
+            lblDbInfo.ForeColor = Color.Black;
+            lblDbInfo.Location = new Point(725, 81);
+            lblDbInfo.Name = "lblDbInfo";
+            lblDbInfo.Size = new Size(163, 20);
+            lblDbInfo.TabIndex = 17;
+            lblDbInfo.Text = "saved.db · saved_words";
+            lblDbInfo.Click += lblDbInfo_Click;
             // 
-            // ColEnglish
+            // textBox6
             // 
-            ColEnglish.HeaderText = " Англи";
-            ColEnglish.MinimumWidth = 6;
-            ColEnglish.Name = "ColEnglish";
-            ColEnglish.Width = 125;
+            textBox6.ForeColor = Color.Green;
+            textBox6.Location = new Point(725, 104);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(125, 27);
+            textBox6.TabIndex = 19;
+            textBox6.Text = "Санасан үгс";
             // 
-            // ColMongolian
+            // textBox7
             // 
-            ColMongolian.HeaderText = "Монгол";
-            ColMongolian.MinimumWidth = 6;
-            ColMongolian.Name = "ColMongolian";
-            ColMongolian.Width = 125;
-            // 
-            // ColRussian
-            // 
-            ColRussian.HeaderText = "Орос";
-            ColRussian.MinimumWidth = 6;
-            ColRussian.Name = "ColRussian";
-            ColRussian.Width = 125;
+            textBox7.Location = new Point(725, 137);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(125, 27);
+            textBox7.TabIndex = 20;
+            textBox7.Text = "Хоосон";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(901, 570);
+            ClientSize = new Size(952, 570);
+            Controls.Add(textBox7);
+            Controls.Add(textBox6);
+            Controls.Add(lblDbInfo);
             Controls.Add(textBox5);
             Controls.Add(button5);
             Controls.Add(button4);
@@ -282,5 +316,8 @@
         private DataGridViewTextBoxColumn ColEnglish;
         private DataGridViewTextBoxColumn ColMongolian;
         private DataGridViewTextBoxColumn ColRussian;
+        private Label lblDbInfo;
+        private TextBox textBox6;
+        private TextBox textBox7;
     }
 }
