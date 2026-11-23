@@ -187,6 +187,7 @@
             button1.TabIndex = 11;
             button1.Text = "+ Нэмэх";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -245,6 +246,7 @@
             // 
             // textBox6
             // 
+            textBox6.BackColor = Color.PaleGreen;
             textBox6.ForeColor = Color.Green;
             textBox6.Location = new Point(725, 104);
             textBox6.Name = "textBox6";
