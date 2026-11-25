@@ -266,7 +266,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(952, 570);
+            ClientSize = new Size(952, 609);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
             Controls.Add(lblDbInfo);
@@ -288,7 +288,7 @@
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Form1";
-            Text = "\tГурван хэлний толь бичиг";
+            Text = "Гурван хэлний толь бичиг";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

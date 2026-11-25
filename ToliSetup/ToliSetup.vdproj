@@ -15,13 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_3B0054B59E904D64915A2F8F7ED0E744"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4C1ABEDBBAA7438FB973A4694F1D25D4"
+        "MsmKey" = "8:_219BAE07DDB04C5C8FE68E6B2D56F28A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -33,13 +27,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_563A4F6E3E69498C98C36C2E801FD312"
+        "MsmKey" = "8:_8234D6B2A85441F6B8E53F247BC3F53D"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_665C43A9E5E946F3AE4755AA618F990F"
+        "MsmKey" = "8:_FF59DC3D94F5409A8F052ED75C5384CA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -140,26 +134,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4C1ABEDBBAA7438FB973A4694F1D25D4"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\sqlite3.exe"
-            "TargetName" = "8:sqlite3.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_54D082057853420B833F4CFF416DA06D"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Downloads\\toli.ico"
@@ -180,10 +154,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_563A4F6E3E69498C98C36C2E801FD312"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8234D6B2A85441F6B8E53F247BC3F53D"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\toli-db.md"
-            "TargetName" = "8:toli-db.md"
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\toli_new.ico"
+            "TargetName" = "8:toli_new.ico"
             "Tag" = "8:"
             "Folder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
             "Condition" = "8:"
@@ -200,10 +174,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_665C43A9E5E946F3AE4755AA618F990F"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FF59DC3D94F5409A8F052ED75C5384CA"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\dict.db"
-            "TargetName" = "8:dict.db"
+            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\sqlite-tools-win-x64-3540100\\toli.db"
+            "TargetName" = "8:toli.db"
             "Tag" = "8:"
             "Folder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
             "Condition" = "8:"
@@ -275,20 +249,20 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:ToliSetup"
+        "ProductName" = "8:toli bichig"
         "ProductCode" = "8:{56F5D00A-9857-41E1-8B31-CE4E2B04D930}"
-        "PackageCode" = "8:{2C398C32-4187-4FD1-8206-2E0999F14B73}"
+        "PackageCode" = "8:{E0974117-DF6C-401B-A21A-B0BF964F4547}"
         "UpgradeCode" = "8:{DC7A168C-747F-466B-B6A8-0EF6738C2F4C}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:dell"
+        "Manufacturer" = "8:МУБИС"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:ToliSetup"
+        "Title" = "8:Толь бичиг суулгах"
         "Subject" = "8:"
         "ARPCONTACT" = "8:dell"
         "Keywords" = "8:"
@@ -397,21 +371,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_805D4480201246F9BCC33CF39DD485ED"
-            {
-            "Name" = "8:toli bichig"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_3B0054B59E904D64915A2F8F7ED0E744"
-            "Folder" = "8:_4D6E9988BA2B47528EBE984F5F142B2B"
-            "WorkingFolder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8EDA88CC74414823BFA18B2A0F08F4B4"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7451FA2AB7C84AC4AF96176CD951C995"
             {
             "Name" = "8:Толь бичиг"
             "Arguments" = "8:"
@@ -419,8 +379,22 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_3B0054B59E904D64915A2F8F7ED0E744"
+            "Target" = "8:_219BAE07DDB04C5C8FE68E6B2D56F28A"
             "Folder" = "8:_9089C002B212435BAF41ABD5776EC8DA"
+            "WorkingFolder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C36951C5A266495D9372BAB76E8DBDA3"
+            {
+            "Name" = "8:Toli bichig"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_219BAE07DDB04C5C8FE68E6B2D56F28A"
+            "Folder" = "8:_4D6E9988BA2B47528EBE984F5F142B2B"
             "WorkingFolder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
             "Icon" = "8:"
             "Feature" = "8:"
@@ -824,9 +798,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3B0054B59E904D64915A2F8F7ED0E744"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_219BAE07DDB04C5C8FE68E6B2D56F28A"
             {
-            "SourcePath" = "8:..\\toli.db\\obj\\Debug\\net9.0-windows\\toli.db.dll"
+            "SourcePath" = "8:..\\toli.db\\obj\\Release\\net9.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_FD7E51B0826149B5BF51B8E59BB9A102"
@@ -845,7 +819,7 @@
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
+            "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{2EEE1A60-CB19-4CF2-8711-4EDB4BDC6758}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

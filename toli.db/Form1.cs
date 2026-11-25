@@ -7,8 +7,7 @@ namespace toli.db
 {
     public partial class Form1 : Form
     {
-        private readonly string dbPath =
-            Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "toli.db");
+        private string dbPath = "";
 
         private string connectionString = "";
 
@@ -19,6 +18,25 @@ namespace toli.db
         public Form1()
         {
             InitializeComponent();
+            string appDir = AppDomain.CurrentDomain.BaseDirectory;
+
+            string dataDir = Path.Combine(
+                Environment.GetFolderPath(
+                    Environment.SpecialFolder.LocalApplicationData),
+                "Toli"
+            );
+
+            Directory.CreateDirectory(dataDir);
+
+            dbPath = Path.Combine(dataDir, "toli.db");
+
+            if (!File.Exists(dbPath))
+            {
+                File.Copy(
+                    Path.Combine(appDir, "toli.db"),
+                    dbPath
+                );
+            }
 
             connectionString = $"Data Source={dbPath}";
 
@@ -44,10 +62,7 @@ namespace toli.db
             textBox6.Click += textBox6_Click;
             textBox7.Click += textBox7_Click;
         }
-
-        // ==================================
         // 1. DATABASE HOLBOH
-        // ==================================
 
         private void Form1_Load(object? sender, EventArgs e)
         {
@@ -131,11 +146,7 @@ namespace toli.db
                 );
             }
         }
-
-        // ==================================
         // 2. UGSIIG HUSNEGTED HARUULAH
-        // ==================================
-
         private void LoadWords()
         {
             if (!databaseReady)
@@ -236,11 +247,7 @@ namespace toli.db
                 );
             }
         }
-
-        // ==================================
         // 3. NIIT UG TOLOH
-        // ==================================
-
         private void UpdateCount()
         {
             using (var con = new SqliteConnection(connectionString))
@@ -263,11 +270,7 @@ namespace toli.db
                 }
             }
         }
-
-        // ==================================
         // 4. SHINE UG NEMEH
-        // ==================================
-
         private void button1_Click(object? sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(textBox2.Text) ||
@@ -313,11 +316,7 @@ namespace toli.db
                 MessageBox.Show("Үг нэмэхэд алдаа гарлаа:\n" + ex.Message);
             }
         }
-
-        // ==================================
         // 5. UG ZASAH
-        // ==================================
-
         private void button2_Click(object? sender, EventArgs e)
         {
             if (selectedId == 0)
@@ -368,10 +367,7 @@ namespace toli.db
                 MessageBox.Show("Үг засахад алдаа гарлаа:\n" + ex.Message);
             }
         }
-
-        // ==================================
         // 6. UG USTGAH
-        // ==================================
 
         private void button3_Click(object? sender, EventArgs e)
         {
@@ -428,10 +424,7 @@ namespace toli.db
                 }
             }
         }
-
-        // ==================================
         // 7. TALBAR TSEVERLEH
-        // ==================================
 
         private void button4_Click(object? sender, EventArgs e)
         {
@@ -449,9 +442,7 @@ namespace toli.db
             dataGridView1.ClearSelection();
         }
 
-        // ==================================
         // 8. SANASAN UG HADGALAH
-        // ==================================
 
         private void button5_Click(object? sender, EventArgs e)
         {
@@ -491,11 +482,8 @@ namespace toli.db
                 MessageBox.Show("Хадгалахад алдаа гарлаа:\n" + ex.Message);
             }
         }
-
-        // ==================================
         // 9. HUSNEGTES UG SONGOH
-        // ==================================
-
+   
         private void dataGridView1_CellClick(
             object? sender, DataGridViewCellEventArgs e)
         {
@@ -514,30 +502,19 @@ namespace toli.db
             textBox3.Text = row.Cells[2].Value?.ToString() ?? "";
             textBox4.Text = row.Cells[3].Value?.ToString() ?? "";
         }
-
-        // ==================================
         // 10. UG HAIRAH
-        // ==================================
 
         private void textBox1_TextChanged(object? sender, EventArgs e)
         {
             LoadWords();
         }
-
-        // ==================================
         // 11. HEL SONGOH
-        // ==================================
-
         private void comboBox1_SelectedIndexChanged(
             object? sender, EventArgs e)
         {
             LoadWords();
         }
-
-        // ==================================
         // 12. SANASAN UGS HARAH
-        // ==================================
-
         private void textBox6_Click(object? sender, EventArgs e)
         {
             showSavedOnly = true;
@@ -546,11 +523,7 @@ namespace toli.db
 
             LoadWords();
         }
-
-        // ==================================
         // 13. SANASAN UGS HOOSLOH
-        // ==================================
-
         private void textBox7_Click(object? sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
@@ -588,11 +561,8 @@ namespace toli.db
                 }
             }
         }
-
-        // ==================================
         // 14. HAIRALTIIN PLACEHOLDER
-        // ==================================
-
+       
         private void textBox1_Enter(object? sender, EventArgs e)
         {
             if (textBox1.Text == "Хайх үг...")
@@ -604,10 +574,7 @@ namespace toli.db
             if (string.IsNullOrWhiteSpace(textBox1.Text))
                 textBox1.Text = "Хайх үг...";
         }
-
-        // ==================================
         // BUSAD EVENT
-        // ==================================
 
         private void label1_Click(object? sender, EventArgs e) { }
 
